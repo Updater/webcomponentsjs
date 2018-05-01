@@ -29,7 +29,7 @@
   "devDependencies": {
     "@webcomponents/custom-elements": "^1.0.8",
     "@webcomponents/html-imports": "^1.1.1",
-    "@webcomponents/shadycss": "^1.1.1",
+    "@webcomponents/shadycss": "trescenzi/shadycss#fork-for-use",
     "@webcomponents/shadydom": "^1.0.12",
     "@webcomponents/template": "^1.2.2",
     "@webcomponents/webcomponents-platform": "^1.0.0",
@@ -38,7 +38,7 @@
     "es6-promise": "4.1.x",
     "eslint": "^4.16.0",
     "google-closure-compiler": "^20171203.0.0",
-    "gulp": "^3.8.8",
+    "gulp": "^3.9.1",
     "gulp-add-src": "^0.2.0",
     "gulp-header": "^1.8.9",
     "gulp-rename": "^1.2.2",
@@ -47,6 +47,7 @@
     "rollup-stream": "=1.23",
     "run-sequence": "^2.2.1",
     "vinyl-buffer": "^1.0.1",
+    "natives": "1.1.3",
     "vinyl-source-stream": "^1.1.2",
     "web-component-tester": "^6.5.0"
   },
