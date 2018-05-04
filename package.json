@@ -30,7 +30,7 @@
     "@webcomponents/custom-elements": "^1.0.8",
     "@webcomponents/html-imports": "^1.1.1",
     "@webcomponents/shadycss": "trescenzi/shadycss#fork-for-use",
-    "@webcomponents/shadydom": "^1.0.12",
+    "@webcomponents/shadydom": "Updater/shadydom#fix-for-ie",
     "@webcomponents/template": "^1.2.2",
     "@webcomponents/webcomponents-platform": "^1.0.0",
     "babel-preset-minify": "^0.2.0",
