@@ -1,17 +1,12 @@
 {
   "name": "@webcomponents/webcomponentsjs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Web Components Polyfills",
   "main": "webcomponents-lite.js",
   "directories": {
     "test": "tests"
   },
-  "keywords": [
-    "webcomponents",
-    "web-components",
-    "polyfill",
-    "shim"
-  ],
+  "keywords": ["webcomponents", "web-components", "polyfill", "shim"],
   "repository": {
     "type": "git",
     "url": "https://github.com/webcomponents/webcomponentsjs.git"
