@@ -11,7 +11,11 @@
 'use strict';
 
 // Establish scope.
-window['WebComponents'] = window['WebComponents'] || {'flags':{}};
+window['WebComponents'] = window['WebComponents'] || { flags: {} };
+
+// Clarify this is our fork.
+window['WebComponents'].repository =
+  'https://github.com/Updater/webcomponentsjs';
 
 // loading script
 let file = 'webcomponents-lite.js';
@@ -22,16 +26,19 @@ let flagMatcher = /wc-(.+)/;
 let flags = {};
 if (!flags['noOpts']) {
   // from url
-  location.search.slice(1).split('&').forEach(function(option) {
-    let parts = option.split('=');
-    let match;
-    if (parts[0] && (match = parts[0].match(flagMatcher))) {
-      flags[match[1]] = parts[1] || true;
-    }
-  });
+  location.search
+    .slice(1)
+    .split('&')
+    .forEach(function(option) {
+      let parts = option.split('=');
+      let match;
+      if (parts[0] && (match = parts[0].match(flagMatcher))) {
+        flags[match[1]] = parts[1] || true;
+      }
+    });
   // from script
   if (script) {
-    for (let i=0, a; (a=script.attributes[i]); i++) {
+    for (let i = 0, a; (a = script.attributes[i]); i++) {
       if (a.name !== 'src') {
         flags[a.name] = a.value || true;
       }
